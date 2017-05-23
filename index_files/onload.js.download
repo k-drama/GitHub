@@ -1,0 +1,54 @@
+$(window).on('scroll',
+	{
+	    previousTop: 0
+	},
+	function () {
+	    var currentTop = $(window).scrollTop();
+	    //check if user is scrolling up
+			if (currentTop > 0) {
+
+	    if (currentTop < this.previousTop ) {
+	    	//if scrolling up...
+	    	//add class 'is-visible' to the main navigation
+	    	//if currentTop == 0, remove 'is-fixed' and 'is-visible' classes
+        $('header').addClass('is-visible');
+
+        if (currentTop == 0) {
+
+          $('header').removeClass('is-visible is-fixed');
+				this.previousTop = 0;
+        }
+
+	    } else {
+	    	//if scrolling down...
+	    	//add the 'is-fixed' class to the main navigation as soon as it is no longer visible
+	    	//add class 'is-visible' to the main navigation
+        $('header').removeClass('is-visible');
+        $('header').addClass('is-fixed');
+	    }
+	    //set previousTop for the next iteration
+	    this.previousTop = currentTop;
+	} else {
+
+		$('header').addClass('is-visible');
+
+		if (currentTop <= 0) {
+
+			$('header').removeClass('is-visible is-fixed');
+		//this.previousTop = 0;
+		}
+	}
+
+
+}
+);
+
+$(function(){
+  $(window).scroll(function(){
+		if($(window).scrollTop() < 0 || $(window).scrollTop() == $(document).height()- $(window).height()) {
+ 	  $('.header-cd').addClass('ontop');
+ 	 } else {
+ 	 	$('.header-cd').removeClass('ontop');
+ 	 }
+  });
+});

@@ -1,0 +1,119 @@
+
+<!-- saved from url=(0042)http://agroweb.org/moti/aw_moti_tirane.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="./jquery-ui-1.8.23.custom.css">
+<link rel="stylesheet" type="text/css" href="./style(1).css">
+<script type="text/javascript" src="./jquery-1.8.1.js.download"></script>
+<script type="text/javascript" src="./jquery-ui-1.8.23.custom.min.js.download"></script>
+<script type="text/javascript" src="./jbweather.js.download"></script>
+
+
+
+
+
+
+<!-- STEP 2: INCLUDE JBWEATHER PHP CLASS -->
+
+
+
+
+
+
+<!-- STEP 3: ADJUST PARAMETERS -->
+
+
+
+
+
+
+<!-- STEP 4: DISPLAY THE WIDGET -->
+</head><body><div class="TYGGK">
+    <div class="jbmww_wrapper">
+        <div class="jbww_head">
+            <!-- //////// Location, Date and Search Button //////// --->
+            <div class="jbww_head_top">
+
+                <div class="jbww_head_location">
+                    <p>Tirane, Albania</p>
+                    <span>
+E marte 23 05 2017</span>
+                </div><!--/jbww_head_location-->
+
+                <div class="jbww_head_search">
+                    <a href="javascript:void(0);" title="Kërko Lokacionin">Kërko Lokacionin</a>
+                </div><!--/jbww_head_search -->
+
+                <div class="jbww_search_bar">
+                    <input type="text" value="" placeholder="Search Location" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+                    <a class="searchButton" href="javascript:void(0);" title="Search"></a>
+                <ul class="ui-autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul></div>
+
+            </div><!--/jbww_head_top -->
+            <!-- //////// Location, Date and Search Button //////// --->
+
+            <!-- //////// Big Icon, Degree Number, Wind //////// --->
+            <div class="jbww_head_today_forecast_wrapper">
+                <div class="jbww_head_today_forecast">
+                    <div class="jbww_head_today_forecast_icon">
+                        <div class="partlycloudy"></div>
+                    </div><!--/jbww_head_today_forecast_icon-->
+
+                    <div class="jbww_head_today_forecast_digit">
+                        <p>19°</p>
+                    </div><!--/jbww_head_today_forecast_digit-->
+
+                    <div class="jbww_head_today_wind_direction">
+                        <p title="Wind Direction">Jug-Lindje</p>
+                    </div><!--/jbww_head_today_wind_direction -->
+
+                    <div class="jbww_head_today_wind_speed">
+                        <p title="Wind Speed">6 KMH</p>
+                    </div><!--/jbww_head_today_wind_speed -->
+                </div><!--/jbww_head_today_forecast -->
+            </div><!--/jbww_head_today_forecast_wrapper-->
+            <!-- //////// Big Icon, Degree Number, Wind //////// --->
+        </div><!--/jbww_head-->
+
+        <!-- //////// Weekly Forecast //////// --->
+
+        <div class="jbww_weekly_forecast_wrapper">
+            <div class="jbww_weekly_forecast_day odd">
+                <div class="jbww_weekly_forecast_date">
+E marte 23</div>
+                <div class="jbww_weekly_forecast_icon"><div class="sunny"></div></div>
+                <div class="jbww_weekly_forecast_deg">13°C / 27°C</div>
+            </div><!--/jbww_weekly_forecast_day_dark-->
+
+            <div class="jbww_weekly_forecast_day even">
+                <div class="jbww_weekly_forecast_date">
+E merkure 24</div>
+                <div class="jbww_weekly_forecast_icon"><div class="sunny"></div></div>
+                <div class="jbww_weekly_forecast_deg">12°C / 26°C</div>
+            </div><!--/jbww_weekly_forecast_day_light-->
+
+            <div class="jbww_weekly_forecast_day odd">
+                <div class="jbww_weekly_forecast_date">
+E enjte 25</div>
+                <div class="jbww_weekly_forecast_icon"><div class="sunny"></div></div>
+                <div class="jbww_weekly_forecast_deg">12°C / 26°C</div>
+            </div><!--/jbww_weekly_forecast_day_dark-->
+
+            <div class="jbww_weekly_forecast_day even">
+                <div class="jbww_weekly_forecast_date">
+E premte 26</div>
+                <div class="jbww_weekly_forecast_icon"><div class="sunny"></div></div>
+                <div class="jbww_weekly_forecast_deg">10°C / 25°C</div>
+            </div><!--/jbww_weekly_forecast_day_light-->
+        </div><!--/jbww_weekly_forecast_wrapper-->
+
+        <!-- //////// Weekly Forecast //////// --->
+       <!--/jbww_forecast_source -->
+    </div><!--/jbww_wrapper-->
+</div>
+            <script type="text/javascript">
+                (function($){
+                    $(document).ready(function(){
+                        new JBWeather('TYGGK').init({url:"jbweather",apiKey:"cy46g5jum6c7jv4zgy3mgyaz",location:"Tirane, Albania",autoDetect:"0",detectType:"1",degreesUnits:"C",windUnits:"K",curl:"1",unique:"TYGGK"});;
+                    });
+                })(jQuery);
+            </script>
+        </body></html>
